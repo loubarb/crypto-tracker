@@ -2,6 +2,7 @@ body {
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Montserrat', sans-serif;
   background: url(./img/black-wood.jpg) fixed;
   background-position: right;
   max-width: 1000px;
@@ -13,8 +14,23 @@ code {
 }
 
 h1, h2, h3 {
-  font-size: 16px;
+  font-size: 24px;
   color: aqua;
+}
+
+p {
+  color: aqua;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 32px;
 }
 
 .searchArea {
@@ -23,6 +39,11 @@ h1, h2, h3 {
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+}
+
+.searchArea input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
 }
 
 .coinArea {
