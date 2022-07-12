@@ -1,13 +1,64 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(./img/black-wood.jpg) fixed;
+  background-position: right;
+  max-width: 1000px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, h2, h3 {
+  font-size: 16px;
+  color: aqua;
+}
+
+.searchArea {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.coinArea {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.coinContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 20px 0;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.border {
+  border-width: 2px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to right, 
+      aqua, 
+      magenta
+    ) 1;
+}
+
+
+.coinContainer img {
+  width: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+  .coinArea {
+    margin: 0 50px;
+  }
+
 }
